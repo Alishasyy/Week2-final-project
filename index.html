@@ -6,14 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
 
 
 <div class="site__container">
-    <div class="row">
-    <section id="landing">
         <nav>
+          <div class="row">
             <div class="nav__container">
             <a href="" class="logo__and--text"> <img class= "logo" src="./assets/logo.svg" alt="" />
             <b>Treact</b>
@@ -38,16 +38,49 @@
                 <a href="" class="nav__link nav__link--button">Sign up</a>
             </li>
             </ul>
+        <!-- </div> -->
+        <!-- </div> -->
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+            </li>
+            <li class="menu__list">
+              <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="#start" class="menu__link" onclick="closeMenu()" >Contact Us</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor" >Login</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor"><button class="menu__button">Sign Up</button></a>
+            </li>
+          </ul>
+        </div>
+        </div>
         </div>
       </nav>
-</div>
+
+<section id="landing">
 <div class="column__container">
+  <div class="landing__row">
   <div class="column__container--left">
     <h1 class="right__column--h1">Beautiful React Templates <span class="color">for you.</span></h1>
     <p class="right__column--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-    <div class="column__input"> 
-      <input type="text" placeholder="Your E-mail adress">
-      <button>Get started</button>
+    <div class="Sign-In-Wrapper">
+      <input class="Email-Input" type="text" placeholder="Your E-mail Address">
+      <button class="Landing-Button">Get Started</button>
     </div>
     <div class="customers__logo--strip">
       <p class="right__column--para-small">OUR TRUSTED CUSTOMERS</p>
@@ -57,6 +90,7 @@
     <figure class="column__right">
     <img class="column__right--img" src="./assets/design.svg">
   </figure>
+</div>
 </div>
 </section>
 
@@ -225,10 +259,9 @@
               <span class="feature">Basic Assistance</span>
             </div>
             <div class="button__wrapper">
-              <div class="personal__btn">BUY NOW</div>
+              <div class="personal__btn btn__primary">BUY NOW</div>
             </div>
         </div>
-
         <div class="pricing__plans--middle">
           <div class="plan__highlight--blue">
             <div class="plan__header">
@@ -244,11 +277,10 @@
               <span class="feature__business">Priority Assistance</span>
             </div>
             <div class="button__wrapper">
-              <div class="business__btn">BUY NOW</div>
+              <div class="business__btn btn__primary">BUY NOW</div>
             </div>
           </div>
         </div>
-
         <div class="pricing__plans--right">
           <div class="plan__highlight--right">
             <div class="plan__header">
@@ -264,7 +296,7 @@
               <span class="feature">Personal Assistance</span>
             </div>
             <div class="button__wrapper">
-              <div class="enterprise__btn">BUY NOW</div>
+              <div class="enterprise__btn btn__primary">BUY NOW</div>
             </div>
           </div>
         </div>
@@ -327,18 +359,19 @@
           <h3 class="started__h3">Developers all over the world are happily using Treact</h3>
         </div>
         <div class="started__btn--wrapper">
-          <button class="getstarted__btn">Get Started</button>
-          <button class="contactus__btn">Contact Us</button>
+          <button class="getstarted__btn btn__primary">Get Started</button>
+          <button class="contactus__btn btn__primary">Contact Us</button>
         </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- </div> -->
 </div>
 
 <footer>
-  <div class="container">
+  <!-- <div class="container"> -->
     <div class="row">
       <div class="footer__wrapper">
       <div class="footer__splits">
@@ -390,8 +423,8 @@
       </div>
     </div>
   </div>
-
-  </div>
+  <!-- </div> -->
 </footer>
+
   </body>
 </html>
